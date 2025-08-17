@@ -3,7 +3,7 @@
 
 A Python-based command-line tool that reads a JSON configuration, builds an optical system using the **Finesse 3 Python API**, runs simulations, and writes plots and data files.
 
-- **Focus**: Optical cavities (Fabry–Perot) first.
+- **Focus**: Optical cavities (Fabry–Perot) .
 - **Next**: Basic interferometry (Michelson) scaffold included.
 - **Input**: JSON specification.
 - **Output**: CSV data and PNG plots in an output folder.

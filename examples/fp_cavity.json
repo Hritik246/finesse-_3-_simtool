@@ -1,0 +1,55 @@
+{
+  "system": {
+    "type": "cavity",
+    "topology": "FP",
+    "laser": {
+      "power": 1.0,
+      "wavelength": 1.064e-06
+    },
+    "components": {
+      "mirrors": [
+        {
+          "name": "m1",
+          "R": 0.99,
+          "T": 0.01
+        },
+        {
+          "name": "m2",
+          "R": 0.99,
+          "T": 0.01
+        }
+      ],
+      "spaces": [
+        {
+          "name": "s0",
+          "from": "L0.p1",
+          "to": "m1.p1",
+          "L": 0.0
+        },
+        {
+          "name": "s2",
+          "from": "m1.p2",
+          "to": "m2.p1",
+          "L": 1.0
+        }
+      ],
+      "beamsplitters": [],
+      "detectors": [
+        {
+          "type": "power",
+          "name": "PD_trans",
+          "port": "m2.p2"
+        }
+      ]
+    }
+  },
+  "simulation": {
+    "scan": {
+      "param": "s2.L",
+      "start": -1e-06,
+      "stop": 1e-06,
+      "num": 1001
+    },
+    "readout": "PD_trans"
+  }
+}

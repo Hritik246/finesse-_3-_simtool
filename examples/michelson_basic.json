@@ -1,0 +1,21 @@
+{
+  "system": {
+    "type": "interferometer",
+    "topology": "Michelson",
+    "laser": {
+      "power": 1.0,
+      "wavelength": 1.064e-06
+    },
+    "components": {
+      "arm_length": 1.0
+    }
+  },
+  "simulation": {
+    "scan": {
+      "start": -1e-06,
+      "stop": 1e-06,
+      "num": 1001
+    },
+    "readout": "PD_out"
+  }
+}

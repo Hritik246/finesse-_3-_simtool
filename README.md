@@ -38,7 +38,7 @@ Outputs will appear under the folder provided with `--out`, e.g. `runs/fp/`:
 
 ---
 
-## JSON Schema (simplified)
+## JSON 
 
 ```json
 {
